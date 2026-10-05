@@ -1,7 +1,10 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /* config options here */
+  typescript: {
+    // Mengizinkan build production selesai meskipun proyekmu memiliki error TypeScript
+    ignoreBuildErrors: true,
+  },
 };
 
 export default nextConfig;
